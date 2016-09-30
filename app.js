@@ -5,6 +5,13 @@ var species = {
 };
 
 function main(){
+	$(".button").click(function() {
+		var buttonType=$(this).data("animal");
+		var valeurType = species [buttonType];
+		$("img").attr('src','img/' + valeurType);
+
+	});
+
 	/* 
 	tout votre code doit se trouver dans cette fonction,
 	vous pouvez biensur créer d'autres fonctions si nécessaire
