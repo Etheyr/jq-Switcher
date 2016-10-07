@@ -3,7 +3,7 @@ var species = {
 	cat    : "cat.jpg",
 	bear   : "bear.jpg",
 	fish   : "fish.jpg"
-	
+
 };
 
 function main(){
@@ -12,7 +12,7 @@ function main(){
 
 		var buttonType=$(this).data("animal");
 
-		var valeurType = species [buttonType];
+		var valeurType = species[buttonType];
 
 		$("img").attr('src','img/' + valeurType);
 
